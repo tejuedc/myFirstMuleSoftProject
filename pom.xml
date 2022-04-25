@@ -17,6 +17,8 @@
 		<mule.maven.plugin.version>3.5.2</mule.maven.plugin.version>
 	</properties>
 
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -29,6 +31,9 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+					<classifier>mule-application</classifier>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
